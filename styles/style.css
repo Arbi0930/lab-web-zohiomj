@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template:
+        "header header header" auto
+        "nav article aside" 1fr
+        "nav footer footer" auto
+        / auto 1fr auto;
+    min-height: 100vh;
+}
+
+header {
+    grid-area: header;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #444;
+    color: #fff;
+    padding: 20px;
+}
+
+article {
+    grid-area: article;
+    background-color: #fff;
+    padding: 20px;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #ccc;
+    padding: 20px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
